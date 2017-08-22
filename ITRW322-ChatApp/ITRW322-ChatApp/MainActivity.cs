@@ -19,12 +19,6 @@ namespace ITRW322_ChatApp
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Login);
-
-            //Create button
-            Button button = FindViewById<btn_Signup>(Resources.Id.btn_Signup);
-
-            button.Click =  SetContentView(Resource.Layout.Sign_up);
-
         }
     }
 }
