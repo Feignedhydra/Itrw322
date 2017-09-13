@@ -1,5 +1,6 @@
 package com.example.student.chatapp;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,11 +19,32 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab;
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == SIGN_IN_REQUEST_CODE)
+        {
+            if(resultCode == RESULT_OK)
+            {
+                Snackbar.make(activity_main,"Successfully signed in. Welcome!", Snackbar.LENGTH_SHORT).show();
+                displayChatMessage();
+            }
+            else
+            {
+                Snackbar.make(activity_main,"We couldn't sign you in. Please try again later", Snackbar.LENGTH_SHORT).show();
+                finish();
+            }
+        }
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         activity_main = (RelativeLayout)findViewById(R.id.activity_main);
+        fab = (FloatingActionButton)findViewById(R.id.fab);
 
         //Check if not sign-in then navigate Signing page
         if(FirebaseAuth.getInstance().getCurrentUser() == null)
