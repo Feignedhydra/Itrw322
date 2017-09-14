@@ -32,7 +32,7 @@
             this.rtbChat = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmChats = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDrikus = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiWikus = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiWerner = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,8 +58,7 @@
             this.rtbChat.Name = "rtbChat";
             this.rtbChat.Size = new System.Drawing.Size(472, 274);
             this.rtbChat.TabIndex = 1;
-            this.rtbChat.Text = "You: Hello \nDrikus: Yes, Whats up?\nYou: Nie veel nie en daar?\nDrikus: Stil en rus" +
-    "tig\n";
+            this.rtbChat.Text = "";
             // 
             // textBox1
             // 
@@ -71,23 +70,23 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
+            this.tsmChats});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(496, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // tsmChats
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmChats.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiDrikus,
             this.tsmiWikus,
             this.tsmiWerner,
             this.tsmiChantel});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(49, 20);
-            this.toolStripMenuItem1.Text = "Chats";
+            this.tsmChats.Name = "tsmChats";
+            this.tsmChats.Size = new System.Drawing.Size(49, 20);
+            this.tsmChats.Text = "Chats";
             // 
             // tsmiDrikus
             // 
@@ -108,12 +107,14 @@
             this.tsmiWerner.Name = "tsmiWerner";
             this.tsmiWerner.Size = new System.Drawing.Size(152, 22);
             this.tsmiWerner.Text = "Werner";
+            this.tsmiWerner.Click += new System.EventHandler(this.tsmiWerner_Click);
             // 
             // tsmiChantel
             // 
             this.tsmiChantel.Name = "tsmiChantel";
             this.tsmiChantel.Size = new System.Drawing.Size(152, 22);
             this.tsmiChantel.Text = "Chantel";
+            this.tsmiChantel.Click += new System.EventHandler(this.tsmiChantel_Click_1);
             // 
             // openFileDialog1
             // 
@@ -143,7 +144,7 @@
         private System.Windows.Forms.RichTextBox rtbChat;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tsmChats;
         private System.Windows.Forms.ToolStripMenuItem tsmiDrikus;
         private System.Windows.Forms.ToolStripMenuItem tsmiWikus;
         private System.Windows.Forms.ToolStripMenuItem tsmiWerner;
