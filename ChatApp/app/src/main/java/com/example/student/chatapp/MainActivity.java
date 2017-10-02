@@ -10,7 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.text.format.DateFormat;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseListAdapter;
@@ -80,15 +83,14 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void OnClick(View view)
+            public void onClick(View view)
             {
                 EditText input = (EditText)findViewById(R.id.input);
                 FirebaseDatabase.getInstance().getReference().push().setValue(new ChatMessage(input.getText().toString(),FirebaseAuth.getInstance().getCurrentUser().getEmail()));
                 input.setText("");
-            }
-        });
+            }});
 
-        //Check if not sign-in then navigate Signing page
+                //Check if not sign-in then navigate Signing page
         if(FirebaseAuth.getInstance().getCurrentUser() == null)
         {
             startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().build(),SIGN_IN_REQUEST_CODE);
@@ -96,13 +98,30 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             Snackbar.make(activity_main,"Welcome " +FirebaseAuth.getInstance().getCurrentUser().getEmail(),Snackbar.LENGTH_SHORT).show();
+            //Load content
+            displayChatMessage();
         }
-        //Load content
-        displayChatMessage();
     }
 
     private void displayChatMessage()
     {
+        ListView listOfMessage = (ListView)findViewById(R.id.list_of_message);
+        adapter = new FirebaseListAdapter<ChatMessage>(this,ChatMessage.class,R.layout.list_item,FirebaseDatabase.getInstance().getReference())
+        {
+            @Override
+            protected void populateView(View v, ChatMessage model, int position)
+            {
+                //Get references to the views of list.item.xml
+                TextView messageText,messageUser,messageTime;
+                messageText = (TextView) v.findViewById(R.id.message_text);
+                messageUser = (TextView) v.findViewById(R.id.message_user);
+                messageTime = (TextView) v.findViewById(R.id.message_time);
 
+                messageText.setText(model.getMessageText());
+                messageUser.setText(model.getMessageUser());
+                messageTime.setText(DateFormat.format("dd-MM-yyyyy (HH:mm:ss)",model.getMessageTime()));
+            }
+        };
+        listOfMessage.setAdapter(adapter);
     }
 }
