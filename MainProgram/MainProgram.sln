@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{9A5BD512-BC42-423A-B134-91CF1E7130D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{229C410A-1511-44AF-AC66-2F07931E447F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingServer", "ChattingServer\ChattingServer.csproj", "{3EA670E9-598B-481E-A2DE-500C70556504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingInterfaces", "ChattingInterfaces\ChattingInterfaces.csproj", "{327ECB7B-5C31-494B-8026-657FD9DBCC4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A5BD512-BC42-423A-B134-91CF1E7130D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A5BD512-BC42-423A-B134-91CF1E7130D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A5BD512-BC42-423A-B134-91CF1E7130D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A5BD512-BC42-423A-B134-91CF1E7130D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229C410A-1511-44AF-AC66-2F07931E447F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229C410A-1511-44AF-AC66-2F07931E447F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229C410A-1511-44AF-AC66-2F07931E447F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229C410A-1511-44AF-AC66-2F07931E447F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA670E9-598B-481E-A2DE-500C70556504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA670E9-598B-481E-A2DE-500C70556504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA670E9-598B-481E-A2DE-500C70556504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA670E9-598B-481E-A2DE-500C70556504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327ECB7B-5C31-494B-8026-657FD9DBCC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327ECB7B-5C31-494B-8026-657FD9DBCC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327ECB7B-5C31-494B-8026-657FD9DBCC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327ECB7B-5C31-494B-8026-657FD9DBCC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
