@@ -1,0 +1,10 @@
+D:\ITRW322-Projek\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
+D:\ITRW322-Projek\GothamChat\GothamChat\bin\Debug\GothamChat.exe
+D:\ITRW322-Projek\GothamChat\GothamChat\bin\Debug\GothamChat.pdb
+D:\ITRW322-Projek\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.exe
+D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
