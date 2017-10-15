@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GothamChat));
             this.btnConnect = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.tbxMessage = new System.Windows.Forms.TextBox();
             this.tbxStatus = new System.Windows.Forms.TextBox();
             this.tbxName = new System.Windows.Forms.TextBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // btnConnect
@@ -121,6 +123,13 @@
             this.tbxName.Size = new System.Drawing.Size(100, 20);
             this.tbxName.TabIndex = 8;
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Bat Signal";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
             // GothamChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +168,7 @@
         private System.Windows.Forms.TextBox tbxMessage;
         private System.Windows.Forms.TextBox tbxStatus;
         private System.Windows.Forms.TextBox tbxName;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

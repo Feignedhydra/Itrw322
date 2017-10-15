@@ -8,3 +8,9 @@ D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.Generate
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.exe
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.GothamServer.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Properties.Resources.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.exe
+E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.pdb

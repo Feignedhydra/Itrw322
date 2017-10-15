@@ -11,3 +11,13 @@ D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemb
 D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
 D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.exe
 D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.exe
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.pdb
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll

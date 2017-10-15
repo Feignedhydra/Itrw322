@@ -47,20 +47,35 @@ namespace GothamChat
             //Update message to tbxStatus
             tbxStatus.Invoke((MethodInvoker)delegate ()
             {
+                
+
                 if ((e.MessageString) == tbxName.Text + " said: " + tbxMessage.Text + "")
                 {
                     tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
                     tbxMessage.Clear();
                     tbxStatus.SelectionStart = tbxStatus.Text.Length;
                     tbxStatus.ScrollToCaret();
+                  
+                    if (this.WindowState == FormWindowState.Minimized)
+                    {
+                        this.Hide();
+                        notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                    }
                 }
                 else
                 {
                     tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length -1) + "\r\n";
+                    
+                    if (this.WindowState == FormWindowState.Minimized)
+                    {
+                         this.Hide();
+                         notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                    }
                 }
 
                
-               
+
+
             });
         }
 
@@ -69,6 +84,13 @@ namespace GothamChat
             gChat.WriteLine(tbxName.Text + " said: " + tbxMessage.Text);
             
          
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+        
         }
     }
 }
