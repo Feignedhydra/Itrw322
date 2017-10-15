@@ -51,11 +51,12 @@ namespace GothamChat
                 {
                     tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
                     tbxMessage.Clear();
+                    tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                    tbxStatus.ScrollToCaret();
                 }
                 else
                 {
                     tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length -1) + "\r\n";
-                    tbxMessage.Clear();
                 }
 
                

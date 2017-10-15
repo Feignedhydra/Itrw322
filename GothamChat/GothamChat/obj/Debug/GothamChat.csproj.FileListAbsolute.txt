@@ -8,3 +8,6 @@ D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateReso
 D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.exe
 D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
 D:\ITRW322-Projek\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
+D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.exe
+D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
