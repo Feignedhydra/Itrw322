@@ -37,6 +37,7 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.tbxMessage = new System.Windows.Forms.TextBox();
             this.tbxStatus = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -69,6 +70,7 @@
             // 
             // tbxHost
             // 
+            this.tbxHost.BackColor = System.Drawing.SystemColors.Window;
             this.tbxHost.Location = new System.Drawing.Point(64, 23);
             this.tbxHost.Name = "tbxHost";
             this.tbxHost.Size = new System.Drawing.Size(100, 20);
@@ -77,6 +79,7 @@
             // 
             // tbxPort
             // 
+            this.tbxPort.BackColor = System.Drawing.SystemColors.Window;
             this.tbxPort.Location = new System.Drawing.Point(206, 23);
             this.tbxPort.Name = "tbxPort";
             this.tbxPort.Size = new System.Drawing.Size(72, 20);
@@ -95,6 +98,7 @@
             // 
             // tbxMessage
             // 
+            this.tbxMessage.BackColor = System.Drawing.SystemColors.Window;
             this.tbxMessage.Location = new System.Drawing.Point(38, 52);
             this.tbxMessage.Multiline = true;
             this.tbxMessage.Name = "tbxMessage";
@@ -103,18 +107,27 @@
             // 
             // tbxStatus
             // 
+            this.tbxStatus.BackColor = System.Drawing.SystemColors.Window;
             this.tbxStatus.Location = new System.Drawing.Point(38, 163);
             this.tbxStatus.Multiline = true;
             this.tbxStatus.Name = "tbxStatus";
             this.tbxStatus.Size = new System.Drawing.Size(432, 188);
             this.tbxStatus.TabIndex = 7;
             // 
+            // tbxName
+            // 
+            this.tbxName.Location = new System.Drawing.Point(12, 137);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(100, 20);
+            this.tbxName.TabIndex = 8;
+            // 
             // GothamChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(525, 418);
+            this.Controls.Add(this.tbxName);
             this.Controls.Add(this.tbxStatus);
             this.Controls.Add(this.tbxMessage);
             this.Controls.Add(this.btnSend);
@@ -124,11 +137,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnConnect);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GothamChat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GothamChat";
-            this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.GothamChat_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,6 +158,7 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox tbxMessage;
         private System.Windows.Forms.TextBox tbxStatus;
+        private System.Windows.Forms.TextBox tbxName;
     }
 }
 

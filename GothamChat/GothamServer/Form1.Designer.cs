@@ -36,6 +36,7 @@
             this.tbxHost = new System.Windows.Forms.TextBox();
             this.tbxPort = new System.Windows.Forms.TextBox();
             this.tbxStatus = new System.Windows.Forms.TextBox();
+            this.btnHowmany = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
@@ -100,11 +101,22 @@
             this.tbxStatus.Size = new System.Drawing.Size(410, 247);
             this.tbxStatus.TabIndex = 6;
             // 
+            // btnHowmany
+            // 
+            this.btnHowmany.Location = new System.Drawing.Point(4, 284);
+            this.btnHowmany.Name = "btnHowmany";
+            this.btnHowmany.Size = new System.Drawing.Size(99, 23);
+            this.btnHowmany.TabIndex = 7;
+            this.btnHowmany.Text = "ShowConnected";
+            this.btnHowmany.UseVisualStyleBackColor = true;
+            this.btnHowmany.Click += new System.EventHandler(this.btnHowmany_Click);
+            // 
             // GothamServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 292);
+            this.ClientSize = new System.Drawing.Size(472, 307);
+            this.Controls.Add(this.btnHowmany);
             this.Controls.Add(this.tbxStatus);
             this.Controls.Add(this.tbxPort);
             this.Controls.Add(this.tbxHost);
@@ -132,6 +144,7 @@
         private System.Windows.Forms.TextBox tbxHost;
         private System.Windows.Forms.TextBox tbxPort;
         private System.Windows.Forms.TextBox tbxStatus;
+        private System.Windows.Forms.Button btnHowmany;
     }
 }
 

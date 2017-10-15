@@ -17,23 +17,32 @@ namespace GothamServer
         {
             InitializeComponent();
         }
-
+        
         SimpleTcpServer gServer;
+        
         private void GothamServer_Load(object sender, EventArgs e)
         {
             gServer = new SimpleTcpServer();
             gServer.Delimiter = 0x13;//enter
             gServer.StringEncoder = Encoding.UTF8;
             gServer.DataReceived += GServer_DataReceived;
+
         }
 
-        private void GServer_DataReceived(object sender, SimpleTCP.Message e)
+        
+        
+        public void GServer_DataReceived(object sender, SimpleTCP.Message e)
         {
+            
             //Update message to tbxStatus
             tbxStatus.Invoke((MethodInvoker)delegate ()
             {
-                tbxStatus.Text += e.MessageString;
-                e.ReplyLine(string.Format("You said: {0}", e.MessageString));
+
+                tbxStatus.Text += "\n" + e.MessageString;
+                
+                gServer.BroadcastLine(string.Format("{0}",e.MessageString));
+
+                
             });
         }
 
@@ -49,6 +58,13 @@ namespace GothamServer
         {
             if (gServer.IsStarted)
                 gServer.Stop();
+        }
+
+        private void btnHowmany_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Convert.ToString(gServer.ConnectedClientsCount));
+            
+           
         }
     }
 }

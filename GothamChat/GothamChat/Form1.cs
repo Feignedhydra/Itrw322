@@ -16,13 +16,17 @@ namespace GothamChat
         public GothamChat()
         {
             InitializeComponent();
+            
         }
-
+        
         SimpleTcpClient gChat;
-
+        
+        
+        
         private void btnConnect_Click(object sender, EventArgs e)
         {
             btnConnect.Enabled = false;
+            
             //Connect to gsServer
             gChat.Connect(tbxHost.Text, Convert.ToInt32(tbxPort.Text));
         }
@@ -32,21 +36,38 @@ namespace GothamChat
             gChat = new SimpleTcpClient();
             gChat.StringEncoder = Encoding.UTF8;
             gChat.DataReceived += GChat_DataReceived;
+            string name = tbxName.Text;
+            
         }
-
+        
+        
+        
         private void GChat_DataReceived(object sender, SimpleTCP.Message e)
         {
             //Update message to tbxStatus
             tbxStatus.Invoke((MethodInvoker)delegate ()
             {
-                tbxStatus.Text += e.MessageString;
-              
+                if ((e.MessageString) == tbxName.Text + " said: " + tbxMessage.Text + "")
+                {
+                    tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
+                    tbxMessage.Clear();
+                }
+                else
+                {
+                    tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length -1) + "\r\n";
+                    tbxMessage.Clear();
+                }
+
+               
+               
             });
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            gChat.WriteLineAndGetReply(tbxMessage.Text, TimeSpan.FromSeconds(1));
+            gChat.WriteLine(tbxName.Text + " said: " + tbxMessage.Text);
+            
+         
         }
     }
 }

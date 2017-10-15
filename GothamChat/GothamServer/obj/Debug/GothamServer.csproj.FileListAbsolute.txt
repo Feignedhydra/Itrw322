@@ -2,9 +2,9 @@ D:\ITRW322-Projek\GothamChat\GothamServer\bin\Debug\GothamServer.exe.config
 D:\ITRW322-Projek\GothamChat\GothamServer\bin\Debug\GothamServer.exe
 D:\ITRW322-Projek\GothamChat\GothamServer\bin\Debug\GothamServer.pdb
 D:\ITRW322-Projek\GothamChat\GothamServer\bin\Debug\SimpleTCP.dll
-D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.GothamServer.resources
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.Properties.Resources.resources
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.exe
 D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
+D:\ITRW322-Projek\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache
