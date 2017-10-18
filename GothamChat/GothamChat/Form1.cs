@@ -11,12 +11,11 @@ using System.Windows.Forms;
 
 namespace GothamChat
 {
-    public partial class GothamChat : Form
+    public partial class GothamChat : MetroFramework.Forms.MetroForm
     {
         public GothamChat()
         {
             InitializeComponent();
-            
         }
         
         SimpleTcpClient gChat;
@@ -36,12 +35,15 @@ namespace GothamChat
             gChat = new SimpleTcpClient();
             gChat.StringEncoder = Encoding.UTF8;
             gChat.DataReceived += GChat_DataReceived;
-            string name = tbxName.Text;
             
         }
-        
-        
-        
+
+        public void Gname(string name)
+        {
+            lblName.Text = name;
+        }
+
+        #region Send & Receive
         private void GChat_DataReceived(object sender, SimpleTCP.Message e)
         {
             //Update message to tbxStatus
@@ -49,7 +51,7 @@ namespace GothamChat
             {
                 
 
-                if ((e.MessageString) == tbxName.Text + " said: " + tbxMessage.Text + "")
+                if ((e.MessageString) == lblName.Text + " said: " + tbxMessage.Text + "")
                 {
                     tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
                     tbxMessage.Clear();
@@ -65,7 +67,8 @@ namespace GothamChat
                 else
                 {
                     tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length -1) + "\r\n";
-                    
+                    tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                    tbxStatus.ScrollToCaret();
                     if (this.WindowState == FormWindowState.Minimized)
                     {
                          this.Hide();
@@ -81,11 +84,9 @@ namespace GothamChat
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            gChat.WriteLine(tbxName.Text + " said: " + tbxMessage.Text);
-            
-         
+            gChat.WriteLine(lblName.Text + " said: " + tbxMessage.Text);
         }
-
+        #endregion
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();

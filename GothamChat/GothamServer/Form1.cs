@@ -41,8 +41,6 @@ namespace GothamServer
                 tbxStatus.Text += "\n" + e.MessageString;
                 
                 gServer.BroadcastLine(string.Format("{0}",e.MessageString));
-
-                
             });
         }
 

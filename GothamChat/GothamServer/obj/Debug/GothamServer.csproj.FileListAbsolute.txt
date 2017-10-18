@@ -14,3 +14,13 @@ E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Pro
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.exe
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\bin\Debug\GothamServer.exe.config
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\bin\Debug\GothamServer.exe
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\bin\Debug\GothamServer.pdb
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\bin\Debug\SimpleTCP.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.GothamServer.resources
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.Properties.Resources.resources
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.exe
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache

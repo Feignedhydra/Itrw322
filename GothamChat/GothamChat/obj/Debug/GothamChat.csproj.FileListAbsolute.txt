@@ -21,3 +21,18 @@ E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.pdb
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.exe
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\GothamChat.exe
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\GothamChat.pdb
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.Design.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.Fonts.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.ArkhamLogin.resources
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.WayneINC.resources
