@@ -113,7 +113,7 @@
             this.tbxMessage.CustomButton.Visible = false;
             this.tbxMessage.Lines = new string[0];
             this.tbxMessage.Location = new System.Drawing.Point(37, 314);
-            this.tbxMessage.MaxLength = 32767;
+            this.tbxMessage.MaxLength = 64;
             this.tbxMessage.Multiline = true;
             this.tbxMessage.Name = "tbxMessage";
             this.tbxMessage.PasswordChar = '\0';

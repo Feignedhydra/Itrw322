@@ -35,3 +35,13 @@ D:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csp
 D:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.CoreCompileInputs.cache
 D:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.exe
 D:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.exe.config
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.exe
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.pdb
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\bin\Debug\SimpleTCP.dll
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csprojResolveAssemblyReference.cache
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.GothamServer.resources
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Properties.Resources.resources
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.exe
+D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.pdb

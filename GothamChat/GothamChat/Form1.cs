@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Security.Cryptography;
 namespace GothamChat
 {
     public partial class GothamChat : MetroFramework.Forms.MetroForm
@@ -19,11 +19,13 @@ namespace GothamChat
             InitializeComponent();
             lblName.Text = name;
         }
-        
+
+        public string encryption, decryption;
         SimpleTcpClient gChat;
-        
-        
-        
+        string hash = "f0xle@rn";
+
+
+
         private void btnConnect_Click(object sender, EventArgs e)
         {
             btnConnect.Enabled = false;
@@ -42,41 +44,126 @@ namespace GothamChat
         #region Send & Receive
         private void GChat_DataReceived(object sender, SimpleTCP.Message e)
         {
-            //Update message to tbxStatus
             tbxStatus.Invoke((MethodInvoker)delegate ()
             {
-                if ((e.MessageString) == lblName.Text + " said: " + tbxMessage.Text + "")
+
+
+                if ((e.MessageString) == encryption + "")
                 {
-                    tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
-                    tbxMessage.Clear();
-                    tbxStatus.SelectionStart = tbxStatus.Text.Length;
-                    tbxStatus.ScrollToCaret();
-                  
-                    if (this.WindowState == FormWindowState.Minimized)
+                    encryption = e.MessageString.Remove(e.MessageString.Length - 1);
+                    decrypt(encryption);
+                    if ((decryption) == (lblName.Text + " said: " + tbxMessage.Text))
                     {
-                        this.Show();
-                        notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
+                        tbxMessage.Clear();
+                        tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                        tbxStatus.ScrollToCaret();
+                        if (this.WindowState == FormWindowState.Minimized)
+                        {
+                            this.Hide();
+                            notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        }
+                    }
+                    else
+                    {
+                        tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length - 1) + "\r\n";
+                        tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                        tbxStatus.ScrollToCaret();
+                        if (this.WindowState == FormWindowState.Minimized)
+                        {
+                            this.Hide();
+                            notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        }
                     }
                 }
                 else
                 {
-                    tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length -1) + "\r\n";
-                    tbxStatus.SelectionStart = tbxStatus.Text.Length;
-                    tbxStatus.ScrollToCaret();
-                    if (this.WindowState == FormWindowState.Minimized)
+                    encryption = e.MessageString.Remove(e.MessageString.Length - 1);
+                    decrypt(encryption);
+
+                    if ((decryption) == (lblName.Text + " said: " + tbxMessage.Text))
                     {
-                         this.Hide();
-                         notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
+                        tbxMessage.Clear();
+                        tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                        tbxStatus.ScrollToCaret();
+                        if (this.WindowState == FormWindowState.Minimized)
+                        {
+                            this.Hide();
+                            notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        }
+                    }
+                    else
+                    {
+                        tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length - 1) + "\r\n";
+                        tbxStatus.SelectionStart = tbxStatus.Text.Length;
+                        tbxStatus.ScrollToCaret();
+                        if (this.WindowState == FormWindowState.Minimized)
+                        {
+                            this.Hide();
+                            notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
+                        }
                     }
                 }
+
+
+
+
             });
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            gChat.WriteLine(lblName.Text + " said: " + tbxMessage.Text);
+            encrypt(lblName.Text + " said: " + tbxMessage.Text);
+        }
+        #region encryption and decryption
+        public void encrypt(string msg)
+        {
+            Boolean encr = false;
+            if (encr == false)
+            {
+                byte[] data = UTF8Encoding.UTF8.GetBytes(msg);
+                using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+                {
+                    byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+                    using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
+                    {
+                        ICryptoTransform transform = tripDes.CreateEncryptor();
+                        byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
+                        msg = Convert.ToBase64String(results, 0, results.Length);
+                        encr = true;
+                        encryption = msg;
+                    }
+                }
+            }
+
+            if (encr == true)
+            {
+                gChat.WriteLine(msg);
+
+            }
+            else
+            {
+                MessageBox.Show("Encryption Failed");
+            }
+        }
+
+        public void decrypt(string msg)
+        {
+            byte[] data = Convert.FromBase64String(msg);
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+                using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
+                {
+                    ICryptoTransform transform = tripDes.CreateDecryptor();
+                    byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
+                    decryption = UTF8Encoding.UTF8.GetString(results);
+                }
+            }
         }
         #endregion
+#endregion
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
