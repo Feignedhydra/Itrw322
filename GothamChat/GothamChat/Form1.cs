@@ -66,7 +66,7 @@ namespace GothamChat
                     }
                     else
                     {
-                        tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length - 1) + "\r\n";
+                        tbxStatus.Text += decryption.Remove(0, 7) + "\r\n";
                         tbxStatus.SelectionStart = tbxStatus.Text.Length;
                         tbxStatus.ScrollToCaret();
                         if (this.WindowState == FormWindowState.Minimized)
@@ -95,7 +95,7 @@ namespace GothamChat
                     }
                     else
                     {
-                        tbxStatus.Text += e.MessageString.Remove(e.MessageString.Length - 1) + "\r\n";
+                        tbxStatus.Text += decryption.Remove(0,7) + "\r\n";
                         tbxStatus.SelectionStart = tbxStatus.Text.Length;
                         tbxStatus.ScrollToCaret();
                         if (this.WindowState == FormWindowState.Minimized)

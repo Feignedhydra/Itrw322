@@ -58,6 +58,7 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseSelectable = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
             // 
             // lLblForgot
             // 
@@ -85,9 +86,9 @@
             // 
             // 
             this.tbxUsername.CustomButton.Image = null;
-            this.tbxUsername.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxUsername.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxUsername.CustomButton.Name = "";
-            this.tbxUsername.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxUsername.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxUsername.CustomButton.TabIndex = 1;
             this.tbxUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -115,9 +116,9 @@
             // 
             // 
             this.tbxPassword.CustomButton.Image = null;
-            this.tbxPassword.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxPassword.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxPassword.CustomButton.Name = "";
-            this.tbxPassword.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxPassword.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxPassword.CustomButton.TabIndex = 1;
             this.tbxPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -127,7 +128,7 @@
             this.tbxPassword.Location = new System.Drawing.Point(85, 190);
             this.tbxPassword.MaxLength = 32767;
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.PasswordChar = '\0';
+            this.tbxPassword.PasswordChar = '●';
             this.tbxPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbxPassword.SelectedText = "";
             this.tbxPassword.SelectionLength = 0;
@@ -136,6 +137,7 @@
             this.tbxPassword.Size = new System.Drawing.Size(134, 25);
             this.tbxPassword.TabIndex = 5;
             this.tbxPassword.UseSelectable = true;
+            this.tbxPassword.UseSystemPasswordChar = true;
             this.tbxPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tbxPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -145,9 +147,9 @@
             // 
             // 
             this.tbxSName.CustomButton.Image = null;
-            this.tbxSName.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxSName.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxSName.CustomButton.Name = "";
-            this.tbxSName.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxSName.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxSName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxSName.CustomButton.TabIndex = 1;
             this.tbxSName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -176,9 +178,9 @@
             // 
             // 
             this.tbxSsurname.CustomButton.Image = null;
-            this.tbxSsurname.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxSsurname.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxSsurname.CustomButton.Name = "";
-            this.tbxSsurname.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxSsurname.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxSsurname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxSsurname.CustomButton.TabIndex = 1;
             this.tbxSsurname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -207,9 +209,9 @@
             // 
             // 
             this.tbxSusername.CustomButton.Image = null;
-            this.tbxSusername.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxSusername.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxSusername.CustomButton.Name = "";
-            this.tbxSusername.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxSusername.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxSusername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxSusername.CustomButton.TabIndex = 1;
             this.tbxSusername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -238,9 +240,9 @@
             // 
             // 
             this.tbxSemail.CustomButton.Image = null;
-            this.tbxSemail.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxSemail.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxSemail.CustomButton.Name = "";
-            this.tbxSemail.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxSemail.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxSemail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxSemail.CustomButton.TabIndex = 1;
             this.tbxSemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -269,9 +271,9 @@
             // 
             // 
             this.tbxSpassword.CustomButton.Image = null;
-            this.tbxSpassword.CustomButton.Location = new System.Drawing.Point(94, 1);
+            this.tbxSpassword.CustomButton.Location = new System.Drawing.Point(110, 1);
             this.tbxSpassword.CustomButton.Name = "";
-            this.tbxSpassword.CustomButton.Size = new System.Drawing.Size(20, 23);
+            this.tbxSpassword.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.tbxSpassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbxSpassword.CustomButton.TabIndex = 1;
             this.tbxSpassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;

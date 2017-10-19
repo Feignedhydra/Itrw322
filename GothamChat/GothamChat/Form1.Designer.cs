@@ -79,6 +79,7 @@
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.btnSend.Enter += new System.EventHandler(this.btnSend_Click);
             // 
             // tbxStatus
             // 
@@ -157,6 +158,7 @@
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 0);
             this.lblName.TabIndex = 12;
+            this.lblName.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // GothamChat
             // 
