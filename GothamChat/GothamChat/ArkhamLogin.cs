@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
+
 namespace GothamChat
 {
     public partial class ArkhamLogin : MetroFramework.Forms.MetroForm
@@ -46,21 +48,31 @@ namespace GothamChat
             CommUserDetail.Parameters.AddWithValue("@Password", tbxPassword.Text);
             reader = CommUserDetail.ExecuteReader();
 
-            if (reader != null && reader.HasRows)
+            do
             {
-                WayneINC dash = new WayneINC(tbxUsername.Text);
-                GothamChat Cname = new GothamChat(tbxUsername.Text);
-                
-                dash.Show();
-                cnn.Close();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username and Password combination is incorrect");
-                cnn.Close();
-                
-            }
+                if (reader != null && reader.HasRows)
+                {
+                    WayneINC dash = new WayneINC(tbxUsername.Text);
+                    GothamChat Cname = new GothamChat(tbxUsername.Text);
+
+                    dash.Show();
+                    MyProgressBar.Minimum = 0;
+                    MyProgressBar.Maximum = 100;
+                    for (int i = 0; i <= 100; i++)
+                    {
+                        MyProgressBar.Value = i;
+                        Thread.Sleep(100);
+                    }
+                    cnn.Close();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username and Password combination is incorrect");
+                    cnn.Close();
+
+                }
+            } while (this.Visible);
         }
         #endregion
         #region Email Validation

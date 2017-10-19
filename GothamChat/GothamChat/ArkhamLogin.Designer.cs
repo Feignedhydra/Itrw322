@@ -47,6 +47,7 @@
             this.lblSemail = new MetroFramework.Controls.MetroLabel();
             this.lblSpassword = new MetroFramework.Controls.MetroLabel();
             this.lblNewAccount = new MetroFramework.Controls.MetroLink();
+            this.MyProgressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -58,7 +59,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseSelectable = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
             // 
             // lLblForgot
             // 
@@ -374,11 +374,19 @@
             this.lblNewAccount.UseSelectable = true;
             this.lblNewAccount.Click += new System.EventHandler(this.lblNewAccount_Click);
             // 
+            // MyProgressBar
+            // 
+            this.MyProgressBar.Location = new System.Drawing.Point(85, 455);
+            this.MyProgressBar.Name = "MyProgressBar";
+            this.MyProgressBar.Size = new System.Drawing.Size(382, 23);
+            this.MyProgressBar.TabIndex = 19;
+            // 
             // ArkhamLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 515);
+            this.Controls.Add(this.MyProgressBar);
             this.Controls.Add(this.lblNewAccount);
             this.Controls.Add(this.lblSpassword);
             this.Controls.Add(this.lblSemail);
@@ -428,5 +436,6 @@
         private MetroFramework.Controls.MetroLabel lblSemail;
         private MetroFramework.Controls.MetroLabel lblSpassword;
         private MetroFramework.Controls.MetroLink lblNewAccount;
+        private System.Windows.Forms.ProgressBar MyProgressBar;
     }
 }

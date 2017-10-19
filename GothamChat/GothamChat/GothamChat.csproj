@@ -74,6 +74,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyProgressBar.Designer.cs">
+      <DependentUpon>MyProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WayneINC.cs">
