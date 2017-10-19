@@ -30,7 +30,6 @@ D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.dll
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\MetroFramework.Fonts.dll
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll
-D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.ArkhamLogin.resources
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources

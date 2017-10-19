@@ -49,8 +49,8 @@ namespace GothamChat
             if (reader != null && reader.HasRows)
             {
                 WayneINC dash = new WayneINC(tbxUsername.Text);
-                GothamChat Cname = new GothamChat();
-                Cname.Gname(tbxUsername.Text);
+                GothamChat Cname = new GothamChat(tbxUsername.Text);
+                
                 dash.Show();
                 cnn.Close();
                 this.Hide();
@@ -129,8 +129,8 @@ namespace GothamChat
                         MessageBox.Show("Account created!");
                         cnn.Close();
                         WayneINC dash = new WayneINC(tbxUsername.Text);
-                        GothamChat Cname = new GothamChat();
-                        Cname.Gname(tbxUsername.Text);
+                        GothamChat Cname = new GothamChat(tbxSusername.Text);
+
                         dash.Show();
                         this.Hide();
                     }

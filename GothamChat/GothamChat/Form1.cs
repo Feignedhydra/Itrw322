@@ -13,9 +13,11 @@ namespace GothamChat
 {
     public partial class GothamChat : MetroFramework.Forms.MetroForm
     {
-        public GothamChat()
+        
+        public GothamChat(string name)
         {
             InitializeComponent();
+            lblName.Text = name;
         }
         
         SimpleTcpClient gChat;
@@ -34,13 +36,7 @@ namespace GothamChat
         {
             gChat = new SimpleTcpClient();
             gChat.StringEncoder = Encoding.UTF8;
-            gChat.DataReceived += GChat_DataReceived;
-            
-        }
-
-        public void Gname(string name)
-        {
-            lblName.Text = name;
+            gChat.DataReceived += GChat_DataReceived; 
         }
 
         #region Send & Receive
@@ -49,8 +45,6 @@ namespace GothamChat
             //Update message to tbxStatus
             tbxStatus.Invoke((MethodInvoker)delegate ()
             {
-                
-
                 if ((e.MessageString) == lblName.Text + " said: " + tbxMessage.Text + "")
                 {
                     tbxStatus.Text += "You said: " + tbxMessage.Text + "\r\n";
@@ -60,7 +54,7 @@ namespace GothamChat
                   
                     if (this.WindowState == FormWindowState.Minimized)
                     {
-                        this.Hide();
+                        this.Show();
                         notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
                     }
                 }
@@ -75,10 +69,6 @@ namespace GothamChat
                          notifyIcon1.ShowBalloonTip(1000, "Bat Signal Activated", "You Have New Messages", ToolTipIcon.Info);
                     }
                 }
-
-               
-
-
             });
         }
 

@@ -27,7 +27,7 @@ namespace GothamChat
 
         private void tlChat_Click(object sender, EventArgs e)
         {
-            GothamChat chat = new GothamChat();
+            GothamChat chat = new GothamChat(lblName.Text);
             chat.Show();
         }
 
