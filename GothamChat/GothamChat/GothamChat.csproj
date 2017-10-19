@@ -154,6 +154,7 @@
   <ItemGroup>
     <Content Include="Resources\Batmail1.png" />
     <Content Include="Resources\Batmail2.png" />
+    <None Include="Resources\signal2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

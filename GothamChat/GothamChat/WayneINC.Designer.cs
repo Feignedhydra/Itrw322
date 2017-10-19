@@ -53,11 +53,13 @@
             this.tlAccount.ActiveControl = null;
             this.tlAccount.Location = new System.Drawing.Point(148, 218);
             this.tlAccount.Name = "tlAccount";
-            this.tlAccount.Size = new System.Drawing.Size(144, 85);
+            this.tlAccount.Size = new System.Drawing.Size(155, 103);
+            this.tlAccount.Style = MetroFramework.MetroColorStyle.Black;
             this.tlAccount.TabIndex = 3;
             this.tlAccount.Text = "Account";
             this.tlAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tlAccount.TileImage = global::GothamChat.Properties.Resources.signal1;
+            this.tlAccount.TileImage = global::GothamChat.Properties.Resources.signal2;
+            this.tlAccount.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tlAccount.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.tlAccount.UseSelectable = true;
             this.tlAccount.UseTileImage = true;
@@ -65,11 +67,13 @@
             // tlEmail
             // 
             this.tlEmail.ActiveControl = null;
-            this.tlEmail.Location = new System.Drawing.Point(325, 221);
+            this.tlEmail.Location = new System.Drawing.Point(310, 218);
             this.tlEmail.Name = "tlEmail";
-            this.tlEmail.Size = new System.Drawing.Size(131, 93);
+            this.tlEmail.Size = new System.Drawing.Size(164, 103);
+            this.tlEmail.Style = MetroFramework.MetroColorStyle.Black;
             this.tlEmail.TabIndex = 2;
             this.tlEmail.TileImage = global::GothamChat.Properties.Resources.Batmail;
+            this.tlEmail.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tlEmail.UseSelectable = true;
             this.tlEmail.UseTileImage = true;
             // 
@@ -78,7 +82,7 @@
             this.tlCalendar.ActiveControl = null;
             this.tlCalendar.Location = new System.Drawing.Point(310, 121);
             this.tlCalendar.Name = "tlCalendar";
-            this.tlCalendar.Size = new System.Drawing.Size(164, 94);
+            this.tlCalendar.Size = new System.Drawing.Size(164, 91);
             this.tlCalendar.TabIndex = 1;
             this.tlCalendar.Text = "Calendar";
             this.tlCalendar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
