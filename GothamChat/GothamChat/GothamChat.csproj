@@ -45,6 +45,8 @@
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="SimpleTCP, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleTCP.1.0.22\lib\net45\SimpleTCP.dll</HintPath>
       <Private>True</Private>
@@ -60,6 +62,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArkhamLogin.cs">
@@ -67,6 +70,12 @@
     </Compile>
     <Compile Include="ArkhamLogin.Designer.cs">
       <DependentUpon>ArkhamLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emails.Designer.cs">
+      <DependentUpon>Emails.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -90,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="ArkhamLogin.resx">
       <DependentUpon>ArkhamLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emails.resx">
+      <DependentUpon>Emails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -160,6 +172,7 @@
   <ItemGroup>
     <Content Include="Resources\Batmail1.png" />
     <Content Include="Resources\Batmail2.png" />
+    <None Include="Resources\loading.gif" />
     <None Include="Resources\signal2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

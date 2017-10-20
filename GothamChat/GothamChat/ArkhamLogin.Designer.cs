@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArkhamLogin));
+            this.lblUsername = new MetroFramework.Controls.MetroLabel();
+            this.lblPassword = new MetroFramework.Controls.MetroLabel();
             this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.lLblForgot = new MetroFramework.Controls.MetroLink();
             this.btnSignup = new MetroFramework.Controls.MetroButton();
@@ -39,16 +41,34 @@
             this.tbxSusername = new MetroFramework.Controls.MetroTextBox();
             this.tbxSemail = new MetroFramework.Controls.MetroTextBox();
             this.tbxSpassword = new MetroFramework.Controls.MetroTextBox();
-            this.lblUsername = new MetroFramework.Controls.MetroLabel();
-            this.lblPassword = new MetroFramework.Controls.MetroLabel();
             this.lblSname = new MetroFramework.Controls.MetroLabel();
             this.lblSsurname = new MetroFramework.Controls.MetroLabel();
             this.lblSusername = new MetroFramework.Controls.MetroLabel();
             this.lblSemail = new MetroFramework.Controls.MetroLabel();
             this.lblSpassword = new MetroFramework.Controls.MetroLabel();
             this.lblNewAccount = new MetroFramework.Controls.MetroLink();
-            this.MyProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Loading = new MetroFramework.Controls.MetroProgressBar();
+            this.LoadingBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadingBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(6, 158);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(68, 19);
+            this.lblUsername.TabIndex = 11;
+            this.lblUsername.Text = "Username";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(6, 191);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(63, 19);
+            this.lblPassword.TabIndex = 12;
+            this.lblPassword.Text = "Password";
             // 
             // btnLogin
             // 
@@ -296,24 +316,6 @@
             this.tbxSpassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tbxSpassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(6, 158);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(68, 19);
-            this.lblUsername.TabIndex = 11;
-            this.lblUsername.Text = "Username";
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(6, 191);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(63, 19);
-            this.lblPassword.TabIndex = 12;
-            this.lblPassword.Text = "Password";
-            // 
             // lblSname
             // 
             this.lblSname.AutoSize = true;
@@ -374,19 +376,32 @@
             this.lblNewAccount.UseSelectable = true;
             this.lblNewAccount.Click += new System.EventHandler(this.lblNewAccount_Click);
             // 
-            // MyProgressBar
+            // Loading
             // 
-            this.MyProgressBar.Location = new System.Drawing.Point(85, 455);
-            this.MyProgressBar.Name = "MyProgressBar";
-            this.MyProgressBar.Size = new System.Drawing.Size(382, 23);
-            this.MyProgressBar.TabIndex = 19;
+            this.Loading.Location = new System.Drawing.Point(162, 421);
+            this.Loading.Name = "Loading";
+            this.Loading.Size = new System.Drawing.Size(224, 23);
+            this.Loading.TabIndex = 19;
+            this.Loading.Visible = false;
+            // 
+            // LoadingBox
+            // 
+            this.LoadingBox.Image = global::GothamChat.Properties.Resources.loading;
+            this.LoadingBox.Location = new System.Drawing.Point(162, 158);
+            this.LoadingBox.Name = "LoadingBox";
+            this.LoadingBox.Size = new System.Drawing.Size(240, 140);
+            this.LoadingBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LoadingBox.TabIndex = 20;
+            this.LoadingBox.TabStop = false;
+            this.LoadingBox.Visible = false;
             // 
             // ArkhamLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 515);
-            this.Controls.Add(this.MyProgressBar);
+            this.Controls.Add(this.LoadingBox);
+            this.Controls.Add(this.Loading);
             this.Controls.Add(this.lblNewAccount);
             this.Controls.Add(this.lblSpassword);
             this.Controls.Add(this.lblSemail);
@@ -407,17 +422,20 @@
             this.Controls.Add(this.btnLogin);
             this.Font = new System.Drawing.Font("Old English Text MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ArkhamLogin";
             this.Padding = new System.Windows.Forms.Padding(20, 65, 20, 22);
             this.Text = "ArkhamLogin";
             this.Load += new System.EventHandler(this.ArkhamLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.LoadingBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private MetroFramework.Controls.MetroLabel lblUsername;
+        private MetroFramework.Controls.MetroLabel lblPassword;
         private MetroFramework.Controls.MetroButton btnLogin;
         private MetroFramework.Controls.MetroLink lLblForgot;
         private MetroFramework.Controls.MetroButton btnSignup;
@@ -428,14 +446,13 @@
         private MetroFramework.Controls.MetroTextBox tbxSusername;
         private MetroFramework.Controls.MetroTextBox tbxSemail;
         private MetroFramework.Controls.MetroTextBox tbxSpassword;
-        private MetroFramework.Controls.MetroLabel lblUsername;
-        private MetroFramework.Controls.MetroLabel lblPassword;
         private MetroFramework.Controls.MetroLabel lblSname;
         private MetroFramework.Controls.MetroLabel lblSsurname;
         private MetroFramework.Controls.MetroLabel lblSusername;
         private MetroFramework.Controls.MetroLabel lblSemail;
         private MetroFramework.Controls.MetroLabel lblSpassword;
         private MetroFramework.Controls.MetroLink lblNewAccount;
-        private System.Windows.Forms.ProgressBar MyProgressBar;
+        private MetroFramework.Controls.MetroProgressBar Loading;
+        private System.Windows.Forms.PictureBox LoadingBox;
     }
 }

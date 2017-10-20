@@ -64,3 +64,4 @@ D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat
 D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.WayneINC.resources
 D:\ITRW322-Projek\GITHUB REPO\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
 D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+D:\ITRW322-Projek\Netwerke final\GothamChat\GothamChat\obj\Debug\GothamChat.Emails.resources

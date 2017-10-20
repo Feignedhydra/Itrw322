@@ -76,6 +76,7 @@
             this.tlEmail.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tlEmail.UseSelectable = true;
             this.tlEmail.UseTileImage = true;
+            this.tlEmail.Click += new System.EventHandler(this.tlEmail_Click);
             // 
             // tlCalendar
             // 

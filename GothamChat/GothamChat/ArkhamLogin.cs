@@ -26,6 +26,7 @@ namespace GothamChat
         #region Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
             string connectionString = null;
             SqlConnection cnn;
             SqlDataReader reader = null;
@@ -47,22 +48,25 @@ namespace GothamChat
             CommUserDetail.Parameters.AddWithValue("@Username", tbxUsername.Text);
             CommUserDetail.Parameters.AddWithValue("@Password", tbxPassword.Text);
             reader = CommUserDetail.ExecuteReader();
-
-            do
-            {
+            
+           
+                
                 if (reader != null && reader.HasRows)
                 {
                     WayneINC dash = new WayneINC(tbxUsername.Text);
                     GothamChat Cname = new GothamChat(tbxUsername.Text);
 
-                    dash.Show();
-                    MyProgressBar.Minimum = 0;
-                    MyProgressBar.Maximum = 100;
+                    
+                    Loading.Minimum = 0;
+                    Loading.Maximum = 100;
                     for (int i = 0; i <= 100; i++)
                     {
-                        MyProgressBar.Value = i;
-                        Thread.Sleep(100);
+                        Loading.Value = i;
+                        LoadingBox.Visible = true;
+                        LoadingBox.Refresh();
+                        System.Threading.Thread.Sleep(100);
                     }
+                    dash.Show();
                     cnn.Close();
                     this.Hide();
                 }
@@ -72,7 +76,7 @@ namespace GothamChat
                     cnn.Close();
 
                 }
-            } while (this.Visible);
+            
         }
         #endregion
         #region Email Validation

@@ -31,6 +31,9 @@ namespace GothamChat
             chat.Show();
         }
 
-        
+        private void tlEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

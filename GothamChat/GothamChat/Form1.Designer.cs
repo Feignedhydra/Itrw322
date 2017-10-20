@@ -85,6 +85,7 @@
             this.tbxStatus.BackColor = System.Drawing.SystemColors.Window;
             this.tbxStatus.Enabled = false;
             this.tbxStatus.Location = new System.Drawing.Point(37, 63);
+            this.tbxStatus.MaxLength = 50000000;
             this.tbxStatus.Multiline = true;
             this.tbxStatus.Name = "tbxStatus";
             this.tbxStatus.Size = new System.Drawing.Size(445, 219);
