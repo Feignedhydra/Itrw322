@@ -17,7 +17,7 @@ namespace GothamServer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GothamServer());
-            Application.Run(new Receive_Files());
+            //Application.Run(new Receive_Files());
         }
     }
 }

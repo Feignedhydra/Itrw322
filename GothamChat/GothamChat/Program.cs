@@ -16,9 +16,9 @@ namespace GothamChat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ArkhamLogin());
+            Application.Run(new ArkhamLogin());
             //Application.Run(new GothamChat());
-            Application.Run(new Send_Files());
+            //Application.Run(new Send_Files());
         }
     }
 }

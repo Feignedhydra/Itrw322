@@ -14,7 +14,6 @@ D:\ITRW322-Projek\GITHUB REPO\itrw322\GothamChat\GothamChat\obj\Debug\GothamChat
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.exe
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
-E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources
 E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
@@ -82,3 +81,12 @@ D:\ITRW322-Projek\Netwerke final\test\GothamChat\GothamChat\obj\Debug\GothamChat
 D:\ITRW322-Projek\Netwerke final\test\GothamChat\GothamChat\obj\Debug\GothamChat.WayneINC.resources
 D:\ITRW322-Projek\Netwerke final\test\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
 D:\ITRW322-Projek\Netwerke final\test\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.ArkhamLogin.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Emails.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Send_Files.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.WayneINC.resources
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.Design.dll
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.dll
+E:\Werk\Programmering\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.Fonts.dll
+D:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Emails.resources
+D:\Werk\Programmering\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Send_Files.resources

@@ -101,6 +101,7 @@
     <Compile Include="Send Files.Designer.cs">
       <DependentUpon>Send Files.cs</DependentUpon>
     </Compile>
+    <Compile Include="WakeUP.cs" />
     <Compile Include="WayneINC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +184,8 @@
     <None Include="Resources\Batmail.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\power1.png" />
+    <None Include="Resources\1.jpeg" />
     <Content Include="Resources\Batmail1.png" />
     <Content Include="Resources\Batmail2.png" />
     <None Include="Resources\Send.ico" />
