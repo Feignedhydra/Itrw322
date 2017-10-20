@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WayneINC));
             this.lblName = new MetroFramework.Controls.MetroLabel();
+            this.btnLogout = new MetroFramework.Controls.MetroButton();
             this.tlAccount = new MetroFramework.Controls.MetroTile();
             this.tlEmail = new MetroFramework.Controls.MetroTile();
             this.tlCalendar = new MetroFramework.Controls.MetroTile();
@@ -47,6 +48,17 @@
             this.lblName.Text = "Name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(501, 22);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(81, 23);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnLogout.UseSelectable = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // tlAccount
             // 
@@ -117,6 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(605, 413);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.tlAccount);
             this.Controls.Add(this.tlEmail);
@@ -139,5 +152,6 @@
         private MetroFramework.Controls.MetroTile tlEmail;
         private MetroFramework.Controls.MetroTile tlAccount;
         private MetroFramework.Controls.MetroLabel lblName;
+        private MetroFramework.Controls.MetroButton btnLogout;
     }
 }

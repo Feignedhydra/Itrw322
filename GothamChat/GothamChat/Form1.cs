@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Net;
+
 namespace GothamChat
 {
     public partial class GothamChat : MetroFramework.Forms.MetroForm
@@ -18,6 +20,7 @@ namespace GothamChat
         {
             InitializeComponent();
             lblName.Text = name;
+            
         }
 
         public string encryption, decryption;
@@ -29,7 +32,10 @@ namespace GothamChat
         private void btnConnect_Click(object sender, EventArgs e)
         {
             btnConnect.Enabled = false;
-            
+            //WebProxy Proxy = new WebProxy("http://cache3.p.nwu.ac.za:80/", true);
+            //Proxy.Credentials = new NetworkCredential("26903202", "bla");
+            //WebRequest req = WebRequest.Create("http://www.contoso.com");
+            //req.Proxy = Proxy;
             //Connect to gsServer
             gChat.Connect(tbxHost.Text, Convert.ToInt32(tbxPort.Text));
         }

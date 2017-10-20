@@ -33,7 +33,15 @@ namespace GothamChat
 
         private void tlEmail_Click(object sender, EventArgs e)
         {
+            Emails email = new Emails();
+            email.Show();
+        }
 
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ArkhamLogin logout = new ArkhamLogin();
+            logout.Show();
         }
     }
 }

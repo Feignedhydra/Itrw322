@@ -33,13 +33,13 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.tbxHost = new System.Windows.Forms.TextBox();
             this.tbxPort = new System.Windows.Forms.TextBox();
-            this.btnSend = new System.Windows.Forms.Button();
             this.tbxStatus = new System.Windows.Forms.TextBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tbxMessage = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lblName = new MetroFramework.Controls.MetroLabel();
+            this.btnSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -69,16 +69,6 @@
             this.tbxPort.Size = new System.Drawing.Size(52, 20);
             this.tbxPort.TabIndex = 4;
             this.tbxPort.Text = "8910";
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(407, 288);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 20);
-            this.btnSend.TabIndex = 5;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // tbxStatus
             // 
@@ -159,6 +149,17 @@
             this.lblName.Size = new System.Drawing.Size(0, 0);
             this.lblName.TabIndex = 12;
             this.lblName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // btnSend
+            // 
+            this.btnSend.BackColor = System.Drawing.Color.Black;
+            this.btnSend.BackgroundImage = global::GothamChat.Properties.Resources.Send1;
+            this.btnSend.Location = new System.Drawing.Point(488, 288);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(37, 33);
+            this.btnSend.TabIndex = 5;
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // GothamChat
             // 
