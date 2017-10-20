@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Net;
+using Microsoft.VisualBasic;
 
 namespace GothamChat
 {
@@ -24,22 +25,26 @@ namespace GothamChat
         }
 
         public string encryption, decryption;
+        public string proxyAdress = "http://cache3.p.nwu.ac.za:80/",
+            proxyUsername = "26903202", proxyPassword = "bla";
         SimpleTcpClient gChat;
         string hash = "f0xle@rn";
 
 
 
         private void btnConnect_Click(object sender, EventArgs e)
-        {
+        {   
             btnConnect.Enabled = false;
-            //WebProxy Proxy = new WebProxy("http://cache3.p.nwu.ac.za:80/", true);
-            //Proxy.Credentials = new NetworkCredential("26903202", "bla");
-            //WebRequest req = WebRequest.Create("http://www.contoso.com");
-            //req.Proxy = Proxy;
+
+            WebProxy Proxy = new WebProxy(proxyAdress, true);
+            Proxy.Credentials = new NetworkCredential(proxyUsername,proxyPassword );
+            WebRequest req = WebRequest.Create("http://www.contoso.com");
+            req.Proxy = Proxy;
             //Connect to gsServer
             gChat.Connect(tbxHost.Text, Convert.ToInt32(tbxPort.Text));
         }
 
+      
         private void GothamChat_Load(object sender, EventArgs e)
         {
             gChat = new SimpleTcpClient();
@@ -117,6 +122,27 @@ namespace GothamChat
         private void btnSend_Click(object sender, EventArgs e)
         {
             encrypt(lblName.Text + " said: " + tbxMessage.Text);
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            txtProxyAddress.Text = proxyAdress;
+            txtProxyUsername.Text = proxyUsername;
+            txtProxyPassword.Text = proxyPassword;
+        }
+
+        private void btnProxyChange_Click(object sender, EventArgs e)
+        {
+            proxyAdress = txtProxyAddress.Text;
+            proxyUsername = txtProxyUsername.Text;
+            proxyPassword = txtProxyPassword.Text;
+            panel1.Visible = false;
+        }
+
+        private void btnCancelprox_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
         }
         #region encryption and decryption
         public void encrypt(string msg)

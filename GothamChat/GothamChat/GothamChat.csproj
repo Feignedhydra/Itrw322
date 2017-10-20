@@ -49,7 +49,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="S22.Imap, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\S22.Imap.dll</HintPath>
+      <HintPath>..\packages\S22.Imap.dll</HintPath>
     </Reference>
     <Reference Include="SimpleTCP, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleTCP.1.0.22\lib\net45\SimpleTCP.dll</HintPath>
@@ -184,6 +184,7 @@
     <None Include="Resources\Batmail.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Untitled.png" />
     <None Include="Resources\power1.png" />
     <None Include="Resources\1.jpeg" />
     <Content Include="Resources\Batmail1.png" />

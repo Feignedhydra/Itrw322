@@ -39,7 +39,19 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lblName = new MetroFramework.Controls.MetroLabel();
+            this.Settings = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblproxyAddress = new System.Windows.Forms.Label();
+            this.txtProxyAddress = new System.Windows.Forms.TextBox();
+            this.lblProxyUsername = new System.Windows.Forms.Label();
+            this.txtProxyUsername = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtProxyPassword = new System.Windows.Forms.TextBox();
+            this.btnProxyChange = new System.Windows.Forms.Button();
+            this.lblPP = new System.Windows.Forms.Label();
+            this.btnCancelprox = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -150,6 +162,18 @@
             this.lblName.TabIndex = 12;
             this.lblName.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // Settings
+            // 
+            this.Settings.Image = global::GothamChat.Properties.Resources.Untitled;
+            this.Settings.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Settings.Location = new System.Drawing.Point(37, 401);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(108, 34);
+            this.Settings.TabIndex = 13;
+            this.Settings.Text = "Proxy";
+            this.Settings.UseVisualStyleBackColor = true;
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
+            // 
             // btnSend
             // 
             this.btnSend.BackColor = System.Drawing.Color.Black;
@@ -161,11 +185,114 @@
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCancelprox);
+            this.panel1.Controls.Add(this.lblPP);
+            this.panel1.Controls.Add(this.btnProxyChange);
+            this.panel1.Controls.Add(this.txtProxyPassword);
+            this.panel1.Controls.Add(this.lblPassword);
+            this.panel1.Controls.Add(this.txtProxyUsername);
+            this.panel1.Controls.Add(this.lblProxyUsername);
+            this.panel1.Controls.Add(this.txtProxyAddress);
+            this.panel1.Controls.Add(this.lblproxyAddress);
+            this.panel1.Location = new System.Drawing.Point(115, 207);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(304, 228);
+            this.panel1.TabIndex = 14;
+            this.panel1.Visible = false;
+            // 
+            // lblproxyAddress
+            // 
+            this.lblproxyAddress.AutoSize = true;
+            this.lblproxyAddress.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblproxyAddress.Location = new System.Drawing.Point(18, 47);
+            this.lblproxyAddress.Name = "lblproxyAddress";
+            this.lblproxyAddress.Size = new System.Drawing.Size(77, 13);
+            this.lblproxyAddress.TabIndex = 0;
+            this.lblproxyAddress.Text = "Proxy Address:";
+            this.lblproxyAddress.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // txtProxyAddress
+            // 
+            this.txtProxyAddress.Location = new System.Drawing.Point(113, 47);
+            this.txtProxyAddress.Name = "txtProxyAddress";
+            this.txtProxyAddress.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyAddress.TabIndex = 1;
+            // 
+            // lblProxyUsername
+            // 
+            this.lblProxyUsername.AutoSize = true;
+            this.lblProxyUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblProxyUsername.Location = new System.Drawing.Point(18, 94);
+            this.lblProxyUsername.Name = "lblProxyUsername";
+            this.lblProxyUsername.Size = new System.Drawing.Size(89, 13);
+            this.lblProxyUsername.TabIndex = 2;
+            this.lblProxyUsername.Text = "Proxy UserName:";
+            // 
+            // txtProxyUsername
+            // 
+            this.txtProxyUsername.Location = new System.Drawing.Point(113, 91);
+            this.txtProxyUsername.Name = "txtProxyUsername";
+            this.txtProxyUsername.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyUsername.TabIndex = 3;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPassword.Location = new System.Drawing.Point(18, 144);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(85, 13);
+            this.lblPassword.TabIndex = 4;
+            this.lblPassword.Text = "Proxy Password:";
+            // 
+            // txtProxyPassword
+            // 
+            this.txtProxyPassword.Location = new System.Drawing.Point(113, 141);
+            this.txtProxyPassword.Name = "txtProxyPassword";
+            this.txtProxyPassword.PasswordChar = '*';
+            this.txtProxyPassword.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyPassword.TabIndex = 5;
+            // 
+            // btnProxyChange
+            // 
+            this.btnProxyChange.Location = new System.Drawing.Point(21, 189);
+            this.btnProxyChange.Name = "btnProxyChange";
+            this.btnProxyChange.Size = new System.Drawing.Size(109, 23);
+            this.btnProxyChange.TabIndex = 6;
+            this.btnProxyChange.Text = "Saved Changes";
+            this.btnProxyChange.UseVisualStyleBackColor = true;
+            this.btnProxyChange.Click += new System.EventHandler(this.btnProxyChange_Click);
+            // 
+            // lblPP
+            // 
+            this.lblPP.AutoSize = true;
+            this.lblPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPP.Location = new System.Drawing.Point(21, 14);
+            this.lblPP.Name = "lblPP";
+            this.lblPP.Size = new System.Drawing.Size(110, 20);
+            this.lblPP.TabIndex = 7;
+            this.lblPP.Text = "Proxy Settings";
+            // 
+            // btnCancelprox
+            // 
+            this.btnCancelprox.Location = new System.Drawing.Point(173, 188);
+            this.btnCancelprox.Name = "btnCancelprox";
+            this.btnCancelprox.Size = new System.Drawing.Size(104, 23);
+            this.btnCancelprox.TabIndex = 8;
+            this.btnCancelprox.Text = "Cancel";
+            this.btnCancelprox.UseVisualStyleBackColor = true;
+            this.btnCancelprox.Click += new System.EventHandler(this.btnCancelprox_Click);
+            // 
             // GothamChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 418);
+            this.ClientSize = new System.Drawing.Size(537, 442);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Settings);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -183,6 +310,8 @@
             this.Text = "GothamChat";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.GothamChat_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +329,17 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel lblName;
+        private System.Windows.Forms.Button Settings;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCancelprox;
+        private System.Windows.Forms.Label lblPP;
+        private System.Windows.Forms.Button btnProxyChange;
+        private System.Windows.Forms.TextBox txtProxyPassword;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtProxyUsername;
+        private System.Windows.Forms.Label lblProxyUsername;
+        private System.Windows.Forms.TextBox txtProxyAddress;
+        private System.Windows.Forms.Label lblproxyAddress;
     }
 }
 
