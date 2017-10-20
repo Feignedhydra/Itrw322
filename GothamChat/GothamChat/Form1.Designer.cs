@@ -42,15 +42,17 @@
             this.Settings = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblproxyAddress = new System.Windows.Forms.Label();
-            this.txtProxyAddress = new System.Windows.Forms.TextBox();
-            this.lblProxyUsername = new System.Windows.Forms.Label();
-            this.txtProxyUsername = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtProxyPassword = new System.Windows.Forms.TextBox();
-            this.btnProxyChange = new System.Windows.Forms.Button();
-            this.lblPP = new System.Windows.Forms.Label();
             this.btnCancelprox = new System.Windows.Forms.Button();
+            this.lblPP = new System.Windows.Forms.Label();
+            this.btnProxyChange = new System.Windows.Forms.Button();
+            this.txtProxyPassword = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtProxyUsername = new System.Windows.Forms.TextBox();
+            this.lblProxyUsername = new System.Windows.Forms.Label();
+            this.txtProxyAddress = new System.Windows.Forms.TextBox();
+            this.lblproxyAddress = new System.Windows.Forms.Label();
+            this.btnBrowse = new MetroFramework.Controls.MetroButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,68 +204,15 @@
             this.panel1.TabIndex = 14;
             this.panel1.Visible = false;
             // 
-            // lblproxyAddress
+            // btnCancelprox
             // 
-            this.lblproxyAddress.AutoSize = true;
-            this.lblproxyAddress.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblproxyAddress.Location = new System.Drawing.Point(18, 47);
-            this.lblproxyAddress.Name = "lblproxyAddress";
-            this.lblproxyAddress.Size = new System.Drawing.Size(77, 13);
-            this.lblproxyAddress.TabIndex = 0;
-            this.lblproxyAddress.Text = "Proxy Address:";
-            this.lblproxyAddress.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // txtProxyAddress
-            // 
-            this.txtProxyAddress.Location = new System.Drawing.Point(113, 47);
-            this.txtProxyAddress.Name = "txtProxyAddress";
-            this.txtProxyAddress.Size = new System.Drawing.Size(169, 20);
-            this.txtProxyAddress.TabIndex = 1;
-            // 
-            // lblProxyUsername
-            // 
-            this.lblProxyUsername.AutoSize = true;
-            this.lblProxyUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblProxyUsername.Location = new System.Drawing.Point(18, 94);
-            this.lblProxyUsername.Name = "lblProxyUsername";
-            this.lblProxyUsername.Size = new System.Drawing.Size(89, 13);
-            this.lblProxyUsername.TabIndex = 2;
-            this.lblProxyUsername.Text = "Proxy UserName:";
-            // 
-            // txtProxyUsername
-            // 
-            this.txtProxyUsername.Location = new System.Drawing.Point(113, 91);
-            this.txtProxyUsername.Name = "txtProxyUsername";
-            this.txtProxyUsername.Size = new System.Drawing.Size(169, 20);
-            this.txtProxyUsername.TabIndex = 3;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(18, 144);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(85, 13);
-            this.lblPassword.TabIndex = 4;
-            this.lblPassword.Text = "Proxy Password:";
-            // 
-            // txtProxyPassword
-            // 
-            this.txtProxyPassword.Location = new System.Drawing.Point(113, 141);
-            this.txtProxyPassword.Name = "txtProxyPassword";
-            this.txtProxyPassword.PasswordChar = '*';
-            this.txtProxyPassword.Size = new System.Drawing.Size(169, 20);
-            this.txtProxyPassword.TabIndex = 5;
-            // 
-            // btnProxyChange
-            // 
-            this.btnProxyChange.Location = new System.Drawing.Point(21, 189);
-            this.btnProxyChange.Name = "btnProxyChange";
-            this.btnProxyChange.Size = new System.Drawing.Size(109, 23);
-            this.btnProxyChange.TabIndex = 6;
-            this.btnProxyChange.Text = "Saved Changes";
-            this.btnProxyChange.UseVisualStyleBackColor = true;
-            this.btnProxyChange.Click += new System.EventHandler(this.btnProxyChange_Click);
+            this.btnCancelprox.Location = new System.Drawing.Point(173, 188);
+            this.btnCancelprox.Name = "btnCancelprox";
+            this.btnCancelprox.Size = new System.Drawing.Size(104, 23);
+            this.btnCancelprox.TabIndex = 8;
+            this.btnCancelprox.Text = "Cancel";
+            this.btnCancelprox.UseVisualStyleBackColor = true;
+            this.btnCancelprox.Click += new System.EventHandler(this.btnCancelprox_Click);
             // 
             // lblPP
             // 
@@ -276,21 +225,89 @@
             this.lblPP.TabIndex = 7;
             this.lblPP.Text = "Proxy Settings";
             // 
-            // btnCancelprox
+            // btnProxyChange
             // 
-            this.btnCancelprox.Location = new System.Drawing.Point(173, 188);
-            this.btnCancelprox.Name = "btnCancelprox";
-            this.btnCancelprox.Size = new System.Drawing.Size(104, 23);
-            this.btnCancelprox.TabIndex = 8;
-            this.btnCancelprox.Text = "Cancel";
-            this.btnCancelprox.UseVisualStyleBackColor = true;
-            this.btnCancelprox.Click += new System.EventHandler(this.btnCancelprox_Click);
+            this.btnProxyChange.Location = new System.Drawing.Point(21, 189);
+            this.btnProxyChange.Name = "btnProxyChange";
+            this.btnProxyChange.Size = new System.Drawing.Size(109, 23);
+            this.btnProxyChange.TabIndex = 6;
+            this.btnProxyChange.Text = "Saved Changes";
+            this.btnProxyChange.UseVisualStyleBackColor = true;
+            this.btnProxyChange.Click += new System.EventHandler(this.btnProxyChange_Click);
+            // 
+            // txtProxyPassword
+            // 
+            this.txtProxyPassword.Location = new System.Drawing.Point(113, 141);
+            this.txtProxyPassword.Name = "txtProxyPassword";
+            this.txtProxyPassword.PasswordChar = '*';
+            this.txtProxyPassword.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyPassword.TabIndex = 5;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPassword.Location = new System.Drawing.Point(18, 144);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(85, 13);
+            this.lblPassword.TabIndex = 4;
+            this.lblPassword.Text = "Proxy Password:";
+            // 
+            // txtProxyUsername
+            // 
+            this.txtProxyUsername.Location = new System.Drawing.Point(113, 91);
+            this.txtProxyUsername.Name = "txtProxyUsername";
+            this.txtProxyUsername.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyUsername.TabIndex = 3;
+            // 
+            // lblProxyUsername
+            // 
+            this.lblProxyUsername.AutoSize = true;
+            this.lblProxyUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblProxyUsername.Location = new System.Drawing.Point(18, 94);
+            this.lblProxyUsername.Name = "lblProxyUsername";
+            this.lblProxyUsername.Size = new System.Drawing.Size(89, 13);
+            this.lblProxyUsername.TabIndex = 2;
+            this.lblProxyUsername.Text = "Proxy UserName:";
+            // 
+            // txtProxyAddress
+            // 
+            this.txtProxyAddress.Location = new System.Drawing.Point(113, 47);
+            this.txtProxyAddress.Name = "txtProxyAddress";
+            this.txtProxyAddress.Size = new System.Drawing.Size(169, 20);
+            this.txtProxyAddress.TabIndex = 1;
+            // 
+            // lblproxyAddress
+            // 
+            this.lblproxyAddress.AutoSize = true;
+            this.lblproxyAddress.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblproxyAddress.Location = new System.Drawing.Point(18, 47);
+            this.lblproxyAddress.Name = "lblproxyAddress";
+            this.lblproxyAddress.Size = new System.Drawing.Size(77, 13);
+            this.lblproxyAddress.TabIndex = 0;
+            this.lblproxyAddress.Text = "Proxy Address:";
+            this.lblproxyAddress.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Location = new System.Drawing.Point(23, 285);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.TabIndex = 15;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseSelectable = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // GothamChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 442);
+            this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.lblName);
@@ -340,6 +357,8 @@
         private System.Windows.Forms.Label lblProxyUsername;
         private System.Windows.Forms.TextBox txtProxyAddress;
         private System.Windows.Forms.Label lblproxyAddress;
+        private MetroFramework.Controls.MetroButton btnBrowse;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

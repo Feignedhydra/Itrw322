@@ -108,3 +108,20 @@ C:\Users\Student\Desktop\GothamChat\GothamChat\bin\Debug\MetroFramework.dll
 C:\Users\Student\Desktop\GothamChat\GothamChat\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Student\Desktop\GothamChat\GothamChat\bin\Debug\S22.Imap.dll
 C:\Users\Student\Desktop\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe.config
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.exe
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.pdb
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csprojResolveAssemblyReference.cache
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.ArkhamLogin.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Emails.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.GothamChat.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Properties.Resources.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.Send_Files.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.WayneINC.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\obj\Debug\GothamChat.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.exe
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\GothamChat.pdb
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.Design.dll
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.dll
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamChat\bin\Debug\SimpleTCP.dll

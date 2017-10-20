@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Net;
 using Microsoft.VisualBasic;
-
+using System.IO;
 namespace GothamChat
 {
     public partial class GothamChat : MetroFramework.Forms.MetroForm
@@ -143,6 +143,24 @@ namespace GothamChat
         private void btnCancelprox_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"; ;
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.FileName = "";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // method 1
+                StreamReader reader = new StreamReader(openFileDialog1.FileName);
+                //MessageBox.Show(reader.ReadToEnd());
+                string message = reader.ReadToEnd();
+                tbxMessage.Text = message;
+                gChat.WriteLine(message);
+            }
         }
         #region encryption and decryption
         public void encrypt(string msg)

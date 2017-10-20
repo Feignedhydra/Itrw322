@@ -59,3 +59,13 @@ E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.exe
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.pdb
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\bin\Debug\SimpleTCP.dll
 E:\Werk\Programmering\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Receive_Files.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.exe.config
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.exe
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\bin\Debug\GothamServer.pdb
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\bin\Debug\SimpleTCP.dll
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.GothamServer.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Properties.Resources.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.Receive_Files.resources
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.exe
+C:\Users\Student\Desktop\test\New folder\Itrw322\GothamChat\GothamServer\obj\Debug\GothamServer.pdb
